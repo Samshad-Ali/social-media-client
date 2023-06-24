@@ -1,0 +1,29 @@
+.feed{
+    >.container{
+        display: flex;
+        gap: 1rem;
+        overflow: hidden;
+        >.left-side{
+            padding: .5rem;
+            height: 100vh;
+            flex: 2;
+            overflow-y: auto;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        >.right-side{
+            flex: 1;
+            margin-top: 3rem;
+           
+            .title{
+                margin-bottom:1rem;
+            }
+            
+            >.suggetions{
+                margin-top: 2.5rem;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,72 @@
+.login {
+  height: 100vh;
+  > .login-box {
+    position: relative;
+    padding: 1.5rem;
+    min-width: 400px;
+    border: 1px solid $black;
+    > h2 {
+      text-align: center;
+    }
+    > form {
+      flex-direction: column;
+      > div {
+        width: 100%;
+        margin-block: 0.5rem;
+        > input,
+        label {
+          display: block;
+          width: 100%;
+        }
+        > label {
+          color: $black;
+          font-weight: 500;
+          margin-bottom: 0.2rem;
+        }
+        > input {
+          padding: 0.5rem 0.5rem;
+          outline: none;
+          color: $black;
+          font-family: $nunito;
+          font-weight: 600;
+          border: 1px solid $black;
+        }
+     
+      }
+      > .submit {
+        transition: all 0.4s;
+        margin-top: 0.5rem;
+        width: 100%;
+        display: block;
+        padding: 0.7rem;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          color: $primary-color;
+          border: 1px solid $primary-color;
+        }
+      }
+      >.subheading{
+        margin-top: .5rem;
+        align-self: end;
+        font-size: .9rem;
+        >.link{
+            font-weight: bold;
+            color: $primary-color;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+  }
+}
+
+
